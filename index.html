@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENDA DE CONTATOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./mains.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/agenda.jpg" alt="foto da agenda">
+            <h1>Agenda de contatos</h1>
+        </header>
+        <form id="form-agenda">  
+            <input type="text" id="nome-contato" required placeholder="Nome do Contato"/>
+            <input type="tel" id="tel-contato" pattern="[0-9]{2} [0-9]{4,5}-[0-9]{4}" title="O Número de telefone precisa ser no formato: 00 0000-0000" required placeholder="Telefone"/>
+            <button type="submit"> Adicionar </button>
+        </form>
+        <table cellspacing="0"> 
+            <thead>
+                <tr>
+                    <th>
+                        NOME DO CONTATO
+                    </th>
+                    <th>
+                        TELEFONE DO CONTATO
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
